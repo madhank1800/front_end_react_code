@@ -37,6 +37,7 @@ const Login = ({ auth, children, ...rest }) => {
     setUserDetails((previous) => {
       return { ...previous, [name]: value };
     });
+    setLogDetailsErrorMsg(false);
   }
 
   // const fetchUserLogDetails =  () => {
@@ -72,6 +73,10 @@ const Login = ({ auth, children, ...rest }) => {
 
    
   };
+
+  // const forgetPasswordPage = () => {
+  //   navigate("/ForgetPassword ");
+  // }
 
   const submitHandler = (event) => {
     event.preventDefault();
@@ -114,32 +119,39 @@ const Login = ({ auth, children, ...rest }) => {
     // console.log("funny");
   };
   return (
-    <>
-      <div className="d-flex flex-column from-group justify-content-center align-items-center mt-5 logcss">
+    <div className="d-flex justify-content-center align-items-center ">
+      <div
+        className="d-flex  card w-50  flex-column from-group  justify-content-center align-items-center
+        mt-5 bg-light bg-opacity-90 shadow-lg  rounded  logcss"
+      >
         <h1>Login form</h1>
         <form
-          className=" card w-30"
+          className="d-flex flex-column custom-input"
           onSubmit={submitHandler}
           // method=""
           // action=""
         >
-          <div className="row card-body ">
-            <div>
-              <input
-                className="form-control mb-5 mt-4"
-                // name="username"
-                type="text"
-                // name="firstname"
-                name="email"
-                value={userDetails.email}
-                onChange={usernameHandler}
-                placeholder="Enter email"
-                aria-describedby="emailHelp"
-              />
+          <div className="row ">
+          
+              <div className="">
+                <input
+                  className="form-control mb-5 mt-4 "
+                  // name="username"
+                  type="text"
+                  // name="firstname"
+                  name="email"
+                  value={userDetails.email}
+                  onChange={usernameHandler}
+                  placeholder="Enter email"
+                  aria-describedby="emailHelp"
+                />
+                
+           
             </div>
+
             <div>
               <input
-                className="form-control mb-5"
+                className="form-control "
                 type="password"
                 name="password"
                 value={userDetails.password}
@@ -147,24 +159,29 @@ const Login = ({ auth, children, ...rest }) => {
                 placeholder="enter password"
               />
             </div>
+            <div className="d-flex flex-column justify-content-start">
+              {logDetailsErrorMsg && (
+                <span className=" text-danger errorDetail">{isLogMsg}</span>
+              )}
+            </div>
             <div>
               <input
-                className="form-control mb-5 btn btn--block btn--solid btn--med loginbg"
+                className="form-control mt-5 mb-5 btn btn--block btn--solid btn--med loginbg"
                 type="submit"
                 // name="commit"
                 value="Login Now"
                 onClick={submitHandler}
               />
             </div>
-            <>{logDetailsErrorMsg && <p>{isLogMsg}</p>}</>
-            <div>
+            {/* <>{logDetailsErrorMsg && <p>{isLogMsg}</p>}</> */}
+            {/* <div>
               <input
                 className="form-control mb-5 btn btn--block btn--solid btn--med loginbg"
                 type="submit"
                 // name="commit"
                 value="forget password"
               />
-            </div>
+            </div> */}
             {/* <div className="d-flex flex-row  g-3">
                 <div className="row">
                   <div className="col">
@@ -181,8 +198,32 @@ const Login = ({ auth, children, ...rest }) => {
               </div> */}
           </div>
         </form>
+        <div className="d-sm-flex flex-row flex-sm-col justify-content-sm-center align-items-sm-center">
+          <div className="">
+            <input
+              className="form-control mb-5 btn btn--block btn--solid btn--med loginbg"
+              type="submit"
+              // name="commit"
+              value="forget password"
+              onClick={() => {
+                navigate("/ForgetPassword");
+              }}
+            />
+          </div>
+          <div className="ml-5">
+            <input
+              className="form-control mb-5 btn btn--block btn--solid btn--med loginbg"
+              type="submit"
+              // name="commit"
+              value="create account"
+              onClick={() => {
+                navigate("/signin");
+              }}
+            />
+          </div>
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 

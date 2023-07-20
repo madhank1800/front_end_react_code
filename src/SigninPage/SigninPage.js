@@ -3,7 +3,7 @@ import "./SigninPage.css";
 import { useState } from "react";
 import axios from "axios";
 // import { Await } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 const Signin = () => {
   const [signupDetails, setSignupDetails] = useState({
     firstname: "",
@@ -23,7 +23,7 @@ const Signin = () => {
     confirmPasswordError: false,
     confirmPasswordSuccess: false,
   });
-
+  const navigate = useNavigate();
   const [showPass, setShowPass] = useState("show");
   // const [showPassError, setShowPassError] = useState('');
 
@@ -350,191 +350,318 @@ const Signin = () => {
   };
   return (
     <>
-      <div className="m-4 d-flex form-group flex-column align-items-center justify-content-center mt-5 ">
-        <h3>signup form</h3>
-        <form
-          className="card w-50"
-          onSubmit={submitHandler}
-          // action="/routes/Signin"
-          // method="post"
-          autoComplete="on"
-        >
-          <div className="row mt-4 card-body  justify-content-center">
-            <div className="mb-4 divtag form-control border border-primary col-12 col-md-6">
-              <input
-                type="text"
-                // className="form-control"
-                className="inputTagClass"
-                placeholder="Enter first name"
-                name="firstname"
-                id="myinput"
-                value={signupDetails.firstname}
-                data-firstnameerror="firstnameError"
-                onChange={changeHandler}
-                onBlur={validateData}
-                // pattern="^([a-zA-Z])*$"
-                // pattern="^[A-Za-z][A-Za-z0-9\s]*$"
-                autoComplete="off"
-              />
-              {/* {signinerror.firstnameError && <p>enter correct firstName id</p>} */}
-            </div>
-            <>
-              {signinerror.firstnameError && <p>enter correct firstName id</p>}
-            </>
-            <div className="mb-4 divtag form-control border border-primary">
-              <input
-                type="text"
-                // className="form-control"
-                className="inputTagClass"
-                placeholder="Enter last Name"
-                name="lastName"
-                value={signupDetails.lastName}
-                onChange={changeHandler}
-                id="mylastNameInput"
-                onBlur={validateData}
-                data-firstnameerror="lastNameError"
-                // pattern="^[A-Za-z][A-Za-z0-9\s]*$"
-                autoComplete="on"
-              />
-              {/* {signinerror.lastNameError && <p>enter correct lastName id</p>} */}
-            </div>
-            <>{signinerror.lastNameError && <p>enter correct lastName id</p>}</>
-
-            <div className="mb-4 divtag form-control border border-primary">
-              <input
-                type="email"
-                //className="form-control"
-                className="inputTagClass"
-                placeholder="Enter email"
-                name="email"
-                // value={signupDetails.email}
-                // onChange={changeHandler}
-                value={signupDetails.email}
-                onChange={changeHandler}
-                data-firstnameerror="emailError"
-                id="myEmailInput"
-                // pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$"
-                onBlur={validateData}
-                required
-                autoComplete="off"
-              />
-              {/* {signinerror.emailError && <p>enter correct email id</p>} */}
-            </div>
-            <>{signinerror.emailError && <p>enter correct email id</p>}</>
-            <div className="mb-4 form-control border border-primary">
-              <input
-                type="tel"
-                // className="form-control"
-                className="inputTagClass"
-                placeholder="Enter phone Number"
-                name="phone"
-                data-firstnameerror="phoneError"
-                value={signupDetails.phone}
-                onChange={changeHandler}
-                onBlur={validateData}
-                autoComplete="on"
-              />
-              {/* {signinerror.phoneError && <p>enter correct phone id</p>} */}
-            </div>
-            <> {signinerror.phoneError && <p>enter correct phone id</p>}</>
-
-            <div className="mb-4 divtagPassword d-flex flex-row justify-content-between form-control border border-primary">
-              <input
-                type="password"
-                // className="form-control divtagChild border-0"
-                className="divtagChild  inputTagClass"
-                placeholder="Enter password"
-                name="password"
-                data-firstnameerror="passwordError"
-                value={signupDetails.password}
-                onChange={changeHandler}
-                id="myPasswordInput"
-                onBlur={validateData}
-                // pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
-                autoComplete="off"
-                required
-              />
-              <button
-                className="showPasswordClass border-0"
-                onClick={showPassword}
+      <div className="d-flex justify-content-center align-items-center">
+        <div className=" d-flex card w-50 form-group flex-column  justify-content-center  align-items-center mt-4 bg-light bg-opacity-90 shadow-lg  rounded ">
+          <h3>signup form</h3>
+          <form
+            // className="card w-50"
+            className="d-flex flex-column custominput1"
+            onSubmit={submitHandler}
+            // action="/routes/Signin"
+            // method="post"
+            autoComplete="on"
+          >
+            <div
+              //className="row mt-3 card-body  justify-content-center"
+              className="row mt-3 "
+            >
+              <div
+                className="position-relative"
+                // className="divtag form-control border border-primary col-12 col-md-6"
               >
-                {showPass}
-              </button>
-              {/* {signinerror.passwordError && <p>enter correct password</p>}
-               */}
-            </div>
-            <>{signinerror.passwordError && <p>enter correct password</p>}</>
+                <input
+                  type="text"
+                  // className="form-control"
+                  className=" form-control inputTagClass "
+                  placeholder="Enter first name"
+                  name="firstname"
+                  id="myinput"
+                  value={signupDetails.firstname}
+                  data-firstnameerror="firstnameError"
+                  onChange={changeHandler}
+                  onBlur={validateData}
+                  // pattern="^([a-zA-Z])*$"
+                  // pattern="^[A-Za-z][A-Za-z0-9\s]*$"
+                  autoComplete="off"
+                />
 
-            <div className="mb-4 form-control border border-primary">
-              <input
-                type="password"
-                // className="form-control"
-                className="inputTagClass justify-content-end"
-                placeholder="confirm password"
-                name="confirmPassword"
-                value={signupDetails.confirmPassword}
-                onChange={changeHandler}
-                onBlur={validateData}
-                autoComplete="off"
-                required
-              />
-              {/* {signinerror.confirmPasswordSuccess && (
+                <div className="d-flex flex-column justify-content-start align-items-start top--5">
+                  {signinerror.firstnameError && (
+                    <span className="text-danger errorDetail justify-content-start ">
+                      enter correct firstName id
+                    </span>
+                  )}
+                </div>
+              </div>
+
+              {/* <div className="d-flex flex-column justify-content-start align-items-start  mt-0">
+                {signinerror.firstnameError && (
+                  <p className="text-danger errorDetail">
+                    enter correct firstName id
+                  </p>
+                )}
+              </div> */}
+              <div
+              // className="mt-4 divtag form-control border border-primary"
+              >
+                <input
+                  type="text"
+                  // className="form-control"
+                  className=" form-control inputTagClass   mt-4 "
+                  placeholder="Enter last Name"
+                  name="lastName"
+                  value={signupDetails.lastName}
+                  onChange={changeHandler}
+                  id="mylastNameInput"
+                  onBlur={validateData}
+                  data-firstnameerror="lastNameError"
+                  // pattern="^[A-Za-z][A-Za-z0-9\s]*$"
+                  autoComplete="on"
+                />
+                <div className="d-flex flex-column align-items-start">
+                  {signinerror.lastNameError && (
+                    <p
+                      className="
+                    text-danger
+                    errorDetail
+                    justify-content-start
+                    align-items-start"
+                    >
+                      enter correct lastName id
+                    </p>
+                  )}
+                </div>
+              </div>
+              <>
+                {/* <div className="d-flex flex-column justify-content-start">
+                  {signinerror.lastNameError && (
+                    <p
+                      className="
+                    text-danger
+                    errorDetail
+                    justify-content-start
+                    align-items-start"
+                    >
+                      enter correct lastName id
+                    </p>
+                  )}
+                </div> */}
+              </>
+
+              <div
+              // className="mb-4 divtag form-control border border-primary"
+              >
+                <input
+                  type="email"
+                  //className="form-control"
+                  className="form-control  inputTagClass mb-4 mt-4 "
+                  placeholder="Enter email"
+                  name="email"
+                  // value={signupDetails.email}
+                  // onChange={changeHandler}
+                  value={signupDetails.email}
+                  onChange={changeHandler}
+                  data-firstnameerror="emailError"
+                  id="myEmailInput"
+                  // pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$"
+                  onBlur={validateData}
+                  required
+                  autoComplete="off"
+                />
+                {/* {signinerror.emailError && <p>enter correct email id</p>} */}
+              </div>
+              <>
+                {signinerror.emailError && (
+                  <p
+                    className="
+                    text-danger
+                    errorDetail
+                    justify-content-start
+                    align-items-start"
+                  >
+                    enter correct email id
+                  </p>
+                )}
+              </>
+              <div
+              // className="mb-4 form-control border border-primary"
+              >
+                <input
+                  type="tel"
+                  // className="form-control"
+                  className=" form-control inputTagClass mb-4 "
+                  placeholder="Enter phone Number"
+                  name="phone"
+                  data-firstnameerror="phoneError"
+                  value={signupDetails.phone}
+                  onChange={changeHandler}
+                  onBlur={validateData}
+                  autoComplete="on"
+                />
+                {/* {signinerror.phoneError && <p>enter correct phone id</p>} */}
+              </div>
+              <>
+                {" "}
+                {signinerror.phoneError && (
+                  <p
+                    className="
+                    text-danger
+                    errorDetail
+                    justify-content-start
+                    align-items-start"
+                  >
+                    enter correct phone id
+                  </p>
+                )}
+              </>
+
+              <div
+                //className="mb-4 input-group divtagPassword d-flex flex-row justify-content-betweenborder "
+                className="mb-4 input-group divtagPassword border-1 border-primary "
+              >
+                <input
+                  type="password"
+                  // className="form-control divtagChild border-0"
+                  className=" form-control divtagChild  inputTagClass border-1  "
+                  placeholder="Enter password"
+                  name="password"
+                  data-firstnameerror="passwordError"
+                  value={signupDetails.password}
+                  onChange={changeHandler}
+                  id="myPasswordInput"
+                  onBlur={validateData}
+                  // pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                  autoComplete="off"
+                  required
+                />
+                <button
+                  className="input-group-append d-flex justify-content-start divtagChild  showPasswordClass  inputTagClass  "
+                  onClick={showPassword}
+                >
+                  {showPass}
+                </button>
+                {/* {signinerror.passwordError && <p>enter correct password</p>}
+                 */}
+              </div>
+              <>
+                {signinerror.passwordError && (
+                  <p
+                    className="
+                    text-danger
+                    errorDetail
+                    justify-content-start
+                    align-items-start"
+                  >
+                    enter correct password
+                  </p>
+                )}
+              </>
+
+              <div
+              //className="mb-4 form-control border border-primary"
+              >
+                <input
+                  type="password"
+                  // className="form-control"
+                  className="form-control inputTagClass justify-content-end mb-4 "
+                  placeholder="confirm password"
+                  name="confirmPassword"
+                  value={signupDetails.confirmPassword}
+                  onChange={changeHandler}
+                  onBlur={validateData}
+                  autoComplete="off"
+                  required
+                />
+                {/* {signinerror.confirmPasswordSuccess && (
                 <p id="passid">password mathced</p>
               )}
               {signinerror.confirmPasswordError && <p>password not mathced</p>} */}
-            </div>
-            <>
-              {signinerror.confirmPasswordSuccess && (
-                <p id="passid">password mathced</p>
-              )}
-              {signinerror.confirmPasswordError && <p>password not mathced</p>}
-            </>
+              </div>
+              <>
+                {signinerror.confirmPasswordSuccess && (
+                  <p id="passid">password mathced</p>
+                )}
+                {signinerror.confirmPasswordError && (
+                  <p
+                    className="
+                    text-danger
+                    errorDetail
+                    justify-content-start
+                    align-items-start"
+                  >
+                    password not mathced
+                  </p>
+                )}
+              </>
 
-            {/* <div className="mt-4">
+              {/* <div className="mt-4">
               <button type="submit" className="btn btn-primary ml-4">
                 Signup
               </button>
             </div> */}
 
-            <>
-              {isDisabledSignUpTag ? (
-                <div className="mb-4 d-flex  border border-primary signbtnclass  ">
-                  {/* <span onClick={submitHandler} className=" btnclass ml-5">
+              <div>
+                {isDisabledSignUpTag ? (
+                  <div className="mb-4 d-flex form-control inputTagClass signbtnclass  ">
+                    {/* <span onClick={submitHandler} className=" btnclass ml-5">
                 Signup
               </span> */}
-                  signup
-                </div>
-              ) : (
-                <div
-                  onClick={submitHandler}
-                  className="mb-4 d-flex  border border-primary signbtnclass signbtnclass1 "
-                >
-                  {/* <span onClick={submitHandler} className=" btnclass ml-5">
+                    signup
+                  </div>
+                ) : (
+                  <div
+                    onClick={submitHandler}
+                    className="mb-4 form-control  d-flex  border border-primary signbtnclass signbtnclass1 "
+                  >
+                    {/* <span onClick={submitHandler} className=" btnclass ml-5">
                 Signup
               </span> */}
-                  signup
-                </div>
-              )}
-            </>
-            <>
-              {isSignedUpSuccess && (
-                <p id="success">
-                  <i className="bi bi-check-circle-fill signupSuccessClass"></i>
-                  {isSignUpMsg}
-                </p>
-              )}
-            </>
-            <>
-              {isUserExisted && (
-                <p id="userExisted">
-                  <i className="bi bi-exclamation-circle-fill userExistClass"></i>
-                  {isUserExistedMsg}
-                </p>
-              )}
-            </>
+                    signup
+                  </div>
+                )}
+              </div>
+              <>
+                {isSignedUpSuccess && (
+                  <p id="success">
+                    <i className="bi bi-check-circle-fill signupSuccessClass"></i>
+                    {isSignUpMsg}
+                  </p>
+                )}
+              </>
+              <>
+                {isUserExisted && (
+                  <p id="userExisted">
+                    <i className="bi bi-exclamation-circle-fill userExistClass"></i>
+                    {isUserExistedMsg}
+                  </p>
+                )}
+              </>
+            </div>
+            {/* <div className="mb-4 d-flex  border border-primary signbtnclass  ">
+            <span
+              onClick={() => {
+                navigate("/login");
+              }}
+              className=" btnclass ml-5"
+            >
+              login
+            </span>
+          </div> */}
+          </form>
+          {/* <div className="d-flex flex-column justify-content-center align-items-center"> */}
+          <div className="mb-4  d-flex flex-column justify-content-center align-items-center inputTagClass bg-cadetblue signbtnclass signbtnclass1 loginTag ">
+            <span
+              onClick={() => {
+                navigate("/login");
+              }}
+              className=" btnclass ml-5"
+            >
+              login
+            </span>
           </div>
-        </form>
+        </div>
       </div>
+      {/* </div> */}
     </>
   );
 };

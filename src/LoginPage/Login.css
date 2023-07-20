@@ -1,11 +1,35 @@
-.logcss{
+*{
+    box-sizing: border-box;
+
+}
+
+/* .logcss{
 
     
-}
+} */
 .loginbg{
     background-color: cadetblue !important;
 }
 
 .form-group{
     line-height: 70px;
+}
+
+.custom-input{
+    width:90%;
+}
+
+.errorDetail{
+ font-weight: bold;
+ font-style: monospace;
+}
+
+@media (max-width:576px){
+    .custom-input {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
 }
