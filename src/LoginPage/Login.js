@@ -63,12 +63,12 @@ const Login = ({ auth, children, ...rest }) => {
     setLogMsg("enter correct details");
   };
 
-  const logSuccess = () => {
+  const logSuccess = (name) => {
     localStorage.setItem("authenticated", true);
     setLogDetailsErrorMsg(false);
     setLogMsg("");
-    
- navigate("/home");
+     localStorage.setItem("profileName", name);
+    navigate("/home");
     
 
    
@@ -99,11 +99,13 @@ const Login = ({ auth, children, ...rest }) => {
       responses.then((data) => {
         console.log("data", data);
         console.log("data", data.data);
-
+      
         if (data.data === "enter correct details") {
           logMsgMethod();
         } else {
-          logSuccess();
+          localStorage.setItem("profileName", data.data.name);
+          console.log("dta", data.data.name);
+          logSuccess(data.data.name);
            
     
         }
@@ -119,7 +121,7 @@ const Login = ({ auth, children, ...rest }) => {
     // console.log("funny");
   };
   return (
-    <div className="d-flex justify-content-center align-items-center ">
+    <div className="d-flex justify-content-center align-items-center loginBackground">
       <div
         className="d-flex  card w-50  flex-column from-group  justify-content-center align-items-center
         mt-5 bg-light bg-opacity-90 shadow-lg  rounded  logcss"

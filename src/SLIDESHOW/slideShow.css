@@ -1,0 +1,65 @@
+.slideShowClass{
+    margin:15px;
+  position:relative
+}
+
+.carouselSlideClassMain{
+    position: relative !important;
+}
+
+.carousel-item img{
+    height: 250px !important;
+    position: relative !important;
+    cursor: pointer;
+}
+
+.carouselButtonClass{
+ display: flex !important;
+ flex-direction: column !important;
+ align-items:flex-start !important;
+  
+height: 100px !important;
+    /* background-color: hsl(0, 0%, 100%) !important; */
+        background-color: #fff !important;
+    width: 50px !important;
+    margin-top: 65px !important;
+    /* cursor: default !important; */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .12) !important;
+    opacity: 1 !important;
+
+}
+
+.carouselButtonClass1 {
+    display: flex !important;
+   flex-direction: row !important;
+   justify-content:flex-end !important;
+
+  height: 100px !important;
+    background-color: hsl(0, 0%, 100%) !important;
+    width: 50px !important;
+    margin-top: 65px !important;
+    /* cursor: default !important; */
+box-shadow: 0 5px 5px rgba(0, 0, 0, .12) !important;
+opacity: 1 !important;
+}
+
+.iconColor{
+    color:black !important;
+    background-color: transparent !important;
+}
+
+.carousel-indicators{
+    background-color: transparent !important;
+}
+
+.carousel-indicators button{
+    width: 10px !important;
+        height: 10px !important;
+        border-radius: 100% !important;
+        background-color: white !important;
+
+        /* opacity: 0 !important; */
+            /* transition: border-radius 1s ease ,width 1s ease !important; */
+}
+
+

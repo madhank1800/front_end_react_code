@@ -1,18 +1,23 @@
 *{
     box-sizing: border-box;
-
+    /* background-color: white ; */
 }
 
-/* .logcss{
+.loginBackground{
+background-color: white;
+}
 
+.logcss{
+background-color: white;
     
-} */
+}
 .loginbg{
     background-color: cadetblue !important;
 }
 
 .form-group{
     line-height: 70px;
+    background-color: white !important;
 }
 
 .custom-input{

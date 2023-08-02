@@ -1,0 +1,597 @@
+*{
+    box-sizing: border-box; 
+        background-color: rgba(235, 230, 230);
+        margin-top: 0;
+} 
+.wholeBrowser{
+
+}
+
+.BrowserParts{
+
+}
+
+.upperPart{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+   justify-content:flex-start;
+    height: 70px;
+    width:100%;
+    background-color: white;
+    margin-top: 0px;
+
+}
+
+.headerPart{
+  display:flex;
+    align-items: center;
+ justify-content: space-between;
+        background-color:white;
+        margin-left: 30px;
+      
+}
+.headerFirstPart{
+    display: flex;
+    flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background: transparent;
+            background-color: transparent;
+}
+
+.logoPart{
+    display: flex;
+    flex-direction: column;
+background: transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.flipkartlogo{
+    display: inline-block;
+        background: transparent;
+        background-color: transparent;
+        font-size: 24px;
+        font-weight: bold;
+        color: rgb(5, 59, 163);
+        font-family: Riona Sans Bold Italic;
+}
+
+.explore{
+    display:inline-block;
+    background: transparent;
+        background-color: transparent;
+        font-size: 24px;
+            /* font-weight: bold; */
+        /* color: rgb(5, 59, 163); */
+        font-family:Riona Sans Bold Italic;
+}
+
+
+
+.searchPart{
+    display:flex;
+   margin-left: 40px;
+    background: transparent;
+        background-color: rgb(218,228,247);
+            
+           
+        border-radius: 5px ;
+}
+
+.searchIconTag{
+    background-color: transparent;
+        background: transparent;
+            background-color: transparent;
+            height:40px;
+            width:50px;
+            border:0;
+            outline: 0 none;
+         
+}
+
+.iconTag{
+    background: transparent;
+        background-color: transparent;
+        font-weight:bolder;
+}
+
+.searchTag{
+    height:40px;
+    width: 500px;
+    background-color: transparent;
+        background: transparent;
+        border: 0;
+            outline: 0 none;
+}
+
+.formTag{
+    background-color: transparent;
+        background: transparent;
+      
+}
+
+.headerSecondPart{
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background: transparent;
+        background-color: transparent;
+        margin-left: 30px;
+       
+}
+
+.accountdiv{
+    /* position: relative; */
+        background: transparent;
+            background-color: transparent;
+    
+}
+
+.sellerPart{
+    display: flex;
+        background: transparent;
+        background-color: transparent;
+        cursor: pointer;
+
+}
+
+.sellerIconTag{
+background-color: transparent;
+    background: transparent;
+    background-color: transparent;
+    height: 40px;
+    width: 50px;
+    border: 0;
+    outline: 0 none;
+}
+
+.shopIcon{
+       
+        background: transparent;
+            background-color: transparent;
+                font-weight:bolder;
+}
+.shopContent{
+    background-color: transparent;
+        background: transparent;
+        justify-content: center;
+}
+
+.shopName{
+height: 40px;
+    /* width: 50px; */
+    background-color: transparent;
+    background: transparent;
+    border: 0;
+    outline: 0 none;
+    display: flex;
+    align-items: center;
+    font-family: inter_regular, fallback-inter_regular, Arial, sans-serif;
+    font-weight: 700;
+}
+
+.accountPart{
+display: flex;
+    background: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 30px;
+    position:relative;
+
+}
+
+.personIconTag{
+background-color: transparent;
+    background: transparent;
+    background-color: transparent;
+    height: 40px;
+    width: 50px;
+    border: 0;
+    outline: 0 none;
+}
+
+.personIcon{
+        background: transparent;
+            background-color: transparent;
+            font-weight: bolder;
+}
+
+.personDetails{
+    background-color: transparent;
+        background: transparent;
+        background-color: transparent;
+        height: 40px;
+        width: 50px;
+        border: 0;
+        outline: 0 none;
+        margin-left: 0px;
+}
+
+.personName{
+    height: 40px;
+        /* width: 50px; */
+        background-color: transparent;
+        background: transparent;
+        border: 0;
+        outline: 0 none;
+        display: flex;
+        align-items: center;
+        font-family: inter_regular, fallback-inter_regular, Arial, sans-serif;
+        font-weight:700;
+}
+
+.arrowIconTag{
+    background-color: transparent;
+        background: transparent;
+        background-color: transparent;
+        height: 40px;
+        width: 50px;
+        border: 0;
+        outline: 0 none;
+        
+}
+
+.arrowIcon{
+    background: transparent;
+        background-color: transparent;
+}
+
+
+.cartPart{
+    display: flex;
+        background: transparent;
+        background-color: transparent;
+        cursor: pointer;
+        margin-left: 30px;
+}
+
+
+.cartIconTag{
+    background-color: transparent;
+        background: transparent;
+        background-color: transparent;
+        height: 40px;
+        width: 50px;
+        border: 0;
+        outline: 0 none;
+}
+
+.cartIcon{
+        background: transparent;
+            background-color: transparent;
+}
+
+.cartDetails{
+    background-color: transparent;
+        background: transparent;
+        background-color: transparent;
+        height: 40px;
+        width: 50px;
+        border: 0;
+        outline: 0 none;
+        margin-left: 0px;
+}
+
+.cartName{
+    height: 40px;
+        /* width: 50px; */
+        background-color: transparent;
+        background: transparent;
+        border: 0;
+        outline: 0 none;
+        display: flex;
+        align-items: center;
+        font-family: inter_regular, fallback-inter_regular, Arial, sans-serif;
+        font-weight: 700;
+}
+
+.threeDotsPart{
+    display: flex;
+        background: transparent;
+        background-color: transparent;
+        cursor: pointer;
+        margin-left: 30px;
+        position: relative;
+}
+
+.threeDotsIconTag{
+background-color: transparent;
+    background: transparent;
+    background-color: transparent;
+    height: 40px;
+    width: 50px;
+    border: 0;
+    outline: 0 none;
+}
+
+.threeDotsIcon{
+background: transparent;
+    background-color: transparent;
+}
+
+
+.MainAnchor{
+    display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    background-color: transparent;
+        background: transparent;
+        /* width:150px; */
+        border: 0;
+            outline: 0 none;
+            width: 175px;
+         top: 0px;
+}
+
+.liClassName{
+        background-color: transparent;
+            background: transparent;
+            border: 0;
+                outline: 0 none;
+                width: 175px;
+                    top: 0px;
+              
+}
+.firstItem{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+        background: transparent;
+    border: 0;
+        outline: 0 none;
+            top: 0px;
+            justify-content: flex-start;
+}
+
+.profileButton{
+    background-color: transparent;
+        background: transparent;
+        background-color: transparent;
+     
+        border: 0;
+        outline: 0 none;
+}
+
+#profileIcon{
+    background: transparent;
+        background-color: transparent;
+}
+
+.myProfile{
+    background-color: transparent;
+        background: transparent;
+        background-color: transparent;
+    
+        border: 0;
+        outline: 0 none;
+}
+
+.myProfileName{
+    background: transparent;
+        background-color: transparent;
+        font-weight: 400;
+}
+
+.ulClassName{
+    background-color: whitesmoke;
+        background: transparent;
+
+        /* display: none; */
+            position: absolute;
+            top: 30px;
+            right: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 1px;
+            box-shadow: 5px 2px 4px whitesmoke;
+            z-index: 999;
+            width:176px;
+         
+}
+
+
+.ulClassNameDots{
+    background-color: transparent;
+    background: transparent;
+
+    /* display: none; */
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    padding: 1px;
+    box-shadow: 0px 4px 16px rgb(0, 0, 0/20%);
+    z-index: 100;
+    width: 230px;
+border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px
+}
+
+.liClassNameDots {
+    background-color: transparent;
+    background: transparent;
+    border: 0;
+    outline: 0 none;
+    /* width: 200px; */
+    top: 0px;
+
+}
+
+
+.MainAnchorDots {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    background-color: transparent;
+    background: transparent;
+    /* width:150px; */
+    border: 0;
+    outline: 0 none;
+    width: 230px;
+    top: 0px;
+}
+
+
+
+
+/* .mainRowPart{
+    position: relative;
+} */
+
+.mainRowPart{
+    /* margin-left: 20px; */
+    background-color:white;
+}
+
+
+
+
+
+.withinRowPart{
+    margin-top:10px;
+    display: flex;
+    height:170px;
+
+    width:8.3%;
+    /* background-color: greenyellow; */
+    /* background-color:white; */
+    /* border:1px solid black; */
+        background-color: white;
+            flex-wrap: wrap;
+            cursor: pointer;
+            position: relative;
+            margin-left: 30px;
+            
+
+            /* gap:0 0 0 20px; */
+          
+}
+
+.ImageClass{
+    display: flex;
+    flex-direction: column;
+    height:100px;
+    width:100%;
+    align-items: center;
+  background: transparent;
+  background-color:white;
+  margin-top: 10px;
+
+}
+
+.imgClassOriginal{
+    background: transparent;
+        /* background-color: white; */
+}
+
+.ImageNameTag{
+    display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+    align-items: center;
+   background-color: transparent;
+   width:100%;
+}
+
+.ImageName{
+    /* align-items: center; */
+    /* padding: auto; */
+  
+    background-color: transparent;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+
+
+.arrowSignClass{
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    border:0;
+    outline: 0;
+    
+ 
+}
+
+
+.colInsideRowClass{
+    background: transparent;
+}
+
+.ImageNameTagClass{
+    background: transparent;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    cursor:default;
+}
+
+#cursorId{
+    cursor: default;
+}
+
+#arrowIconId{
+    cursor: default;
+    /* color:blue; */
+}
+
+.arrowChangeColor{
+    color:blue;
+}
+
+
+
+#imageNameFashionId:hover{
+ /* color: blue; */
+
+}
+
+.ulClassNameFashion{
+    background-color: whitesmoke;
+        background: transparent;
+    
+        /* display: none; */
+        position: absolute;
+        top: 150px;
+        right: 10px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 1px;
+        box-shadow: 5px 2px 4px whitesmoke;
+        z-index: 999;
+        width: 176px;
+        /* height:50px; */
+}
+
+
+
+.ulClassNameFashionClothes{
+    background-color: whitesmoke;
+        background: transparent;
+    
+        /* display: none; */
+        position: absolute;
+        top: 1px;
+        right: 0px;
+        left:176px;
+        height:500px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 1px;
+        box-shadow: 5px 2px 4px whitesmoke;
+        z-index: 999;
+        width: 176px;
+}
+
+.liClassName:hover{
+    background-color: rgb(218, 228, 247)!important;
+}

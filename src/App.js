@@ -8,6 +8,10 @@ import Signin from "./SigninPage/SigninPage";
 import Home from "./HOME/homePage";
 import Protected from "./Protected/Protected";
 import ForgetPassword from "./ForgetPasswordPage/ForgetPassword";
+import Admin from './ADIMIN/admin';
+import AdminMobile from './ADIMIN/mobilesAdmin';
+import MobilePage from "./MobilesPage/MobilePage";
+import GroceryPage from "./Grocery/groceryPage";
 
 //import Protected from "./Protected/Protected";
 //import useCustoHook from "./useCustoHook";
@@ -24,11 +28,15 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-           <Route path="/" element={<Login />} /> 
+          <Route path="/" element={<Login />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/ForgetPassword" element={<ForgetPassword />} />
+          <Route path="/groceryadmin" element={<Admin />} />
+          <Route path="/mobilesadmin" element={<AdminMobile />} />
+          <Route path="/mobilesDetails" element={<MobilePage />} />
+          <Route path="/groceryDetails" element={<GroceryPage />} />
           <Route
             path="/home"
             element={
