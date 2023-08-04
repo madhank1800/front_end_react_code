@@ -1,16 +1,23 @@
-.slideShowClass{
+#slideShowClass{
     margin:15px;
-  position:relative
+  position:relative;
+
+
+    --scrollX: "auto" !important;
 }
 
 .carouselSlideClassMain{
     position: relative !important;
+        --gridAutoColumns: 100%;
+    --scrollX: "auto" !important;
 }
 
 .carousel-item img{
     height: 250px !important;
     position: relative !important;
     cursor: pointer;
+        --gridAutoColumns: 100%;
+    --scrollX: "auto" !important;
 }
 
 .carouselButtonClass{
@@ -26,6 +33,7 @@ height: 100px !important;
     /* cursor: default !important; */
     box-shadow: 0 5px 5px rgba(0, 0, 0, .12) !important;
     opacity: 1 !important;
+
 
 }
 

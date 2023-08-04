@@ -12,6 +12,10 @@ import Admin from './ADIMIN/admin';
 import AdminMobile from './ADIMIN/mobilesAdmin';
 import MobilePage from "./MobilesPage/MobilePage";
 import GroceryPage from "./Grocery/groceryPage";
+import BestGoodsPage from "./BestOfGoods/BestGoodsPage";
+
+
+
 
 //import Protected from "./Protected/Protected";
 //import useCustoHook from "./useCustoHook";
@@ -37,6 +41,7 @@ function App() {
           <Route path="/mobilesadmin" element={<AdminMobile />} />
           <Route path="/mobilesDetails" element={<MobilePage />} />
           <Route path="/groceryDetails" element={<GroceryPage />} />
+          <Route path="/bestMobilesDetails" element={<BestGoodsPage />} />
           <Route
             path="/home"
             element={

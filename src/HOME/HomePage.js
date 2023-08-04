@@ -2,7 +2,8 @@ import React from "react";
 import './home.css';
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import SLIDESHOW from "../SLIDESHOW/slideShow";
+import SLIDESHOW from "../SLIDESHOW/SlideShow";
+import BestGoodsPage from "../BestOfGoods/BestGoodsPage";
 const Home = () => {
     
   const [AccountToggleSucess, setAccountToggleSuccess] = useState(false);
@@ -1567,7 +1568,8 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <SLIDESHOW />
+            <SLIDESHOW  />
+            <BestGoodsPage />
           </div>
         </div>
       </>

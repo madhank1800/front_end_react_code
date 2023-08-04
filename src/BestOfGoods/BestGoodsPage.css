@@ -1,0 +1,203 @@
+.wholeBox{
+    /* display: flex;
+        flex-direction: row; */
+        /* background-color: white; */
+        margin: 20px;
+        /* scroll-behavior: smooth; */
+
+
+        display: flex;
+        flex-direction: row;
+}
+
+
+.titleName{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin:20px 0 0 20px;
+}
+
+.titleClass{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    font-size: larger;
+}
+.withinBox{
+  
+
+
+
+
+ 
+    max-width: 900px;
+    height:400px;
+    overflow-x:hidden;
+
+border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px white;
+
+    background-color: white;
+    /* scroll-behavior: smooth; */
+
+    position:relative;
+}
+.withinRow{
+
+  display: flex;
+  overflow-x: hidden;
+  /* Enable horizontal scrolling */
+  scroll-behavior: smooth;
+  /* Add smooth scrolling behavior */
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+
+}
+
+
+
+.withinRow{
+    display: flex;
+    flex-direction: row;
+         /* width:400px; */
+        /* height: 400px;
+        margin:20px;
+        /* border:2px solid black;
+        border-radius: 5px;
+        box-shadow: 2px 2px 4px white; */
+        background-color: white;
+
+    /* scroll-behavior: smooth; */
+
+        /* position: relative; */
+
+     
+
+        }
+     
+
+
+.withinCard{
+    display: flex;
+    flex-direction: column;
+    width:400px !important;
+    height: 300px !important;
+    margin:20px;
+
+    border: 2px groove rgb(235, 229, 229);
+        border-radius: 5px;
+        box-shadow: 2px 2px 4px white;
+
+background-color: white !important;
+
+        background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            position: relative;
+}
+
+.imageClass{
+    display: 0 0 auto;
+    flex-direction: row;
+    width: 100%;
+        height: 300px;
+        object-fit:cover;
+        background-color: white;
+
+        background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+}
+
+.imageClass:hover{
+    transform: scale(1.01);
+}
+
+/* .chevronRightClasss{
+
+  
+    position:absolute;
+   top:100px;
+   /* right:700px; */
+/* display: flex;
+justify-content: flex-end;
+
+width:40px;
+height:88px;
+background-color: white;
+top:50%;
+left:96%;
+bottom:0; */
+
+
+/* } */
+ 
+
+.PriceClassCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+}
+.priceclass{
+    background-color: white;
+}
+
+.chevronRightClasss{
+    position: absolute;
+    
+      width: 40px;
+        height: 88px;
+        top: 40%;
+        left:96%;
+        /* right: 10px; */
+        display: flex;
+        flex-direction: column;
+        z-index: 999;
+        background-color: white;
+}
+
+
+.arrowIconRight{
+    position: absolute;
+
+ top:50%;
+
+background-color:white;
+}
+
+.chevronLeftClasss{
+    position: absolute;
+    
+        width: 40px;
+        height: 88px;
+        top: 40%;
+        /* left: 96%; */
+        right: 96%;
+        display: flex;
+        flex-direction: column;
+        z-index: 999;
+        background-color: white;
+}
+
+.arrowIconLeft{
+    position: absolute;
+    
+        top: 50%;
+    
+        background-color: white;
+}
+
+.ImageSideClass{
+    display: flex;
+    flex:0 0 auto;
+
+ margin: 0 0 0 20px;
+    height:400px;
+    width: 400px;
+    object-fit: cover;
+}

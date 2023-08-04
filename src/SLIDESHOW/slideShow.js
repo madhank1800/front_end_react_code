@@ -1,6 +1,11 @@
 import React from "react";
 import './slideShow.css';
-const slideShow = () => {
+const SlideShow = () => {
+
+
+
+  
+
     
     return (
       <>
@@ -82,11 +87,12 @@ const slideShow = () => {
           </div>
         </div> */}
 
-        <div className="slideShowClass">
+        <div id="slideShowClass">
           <div
             id="carouselExampleDark"
             class="carousel carousel-dark slide shadow-lg   carouselSlideClassMain"
             data-bs-ride="carousel"
+            data-bs-interval="1000"
           >
             <div class="carousel-indicators">
               <button
@@ -110,7 +116,11 @@ const slideShow = () => {
                 aria-label="Slide 3"
               ></button>
             </div>
-            <div class="carousel-inner">
+            <div
+              class="carousel-inner"
+              data-bs-interval="1000"
+             
+            >
               <div class="carousel-item active" data-bs-interval="1000">
                 <img
                   src="/images/slideShowImage3.jpg"
@@ -164,4 +174,4 @@ const slideShow = () => {
 
 }
 
-export default slideShow;
+export default SlideShow;

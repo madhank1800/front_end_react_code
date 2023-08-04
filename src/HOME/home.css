@@ -20,6 +20,9 @@
     width:100%;
     background-color: white;
     margin-top: 0px;
+    position:fixed;
+    z-index: 100;
+    /* margin-bottom: 50px; */
 
 }
 
@@ -349,6 +352,10 @@ background: transparent;
             justify-content: flex-start;
 }
 
+.displayPart{
+    margin-top: 85px !important;
+}
+
 .profileButton{
     background-color: transparent;
         background: transparent;
@@ -449,6 +456,7 @@ border-bottom-left-radius: 8px;
 .mainRowPart{
     /* margin-left: 20px; */
     background-color:white;
+    margin-top:50px;
 }
 
 
