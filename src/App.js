@@ -13,7 +13,7 @@ import AdminMobile from './ADIMIN/mobilesAdmin';
 import MobilePage from "./MobilesPage/MobilePage";
 import GroceryPage from "./Grocery/groceryPage";
 import BestGoodsPage from "./BestOfGoods/BestGoodsPage";
-
+import CompanyDetails from './TOP_STORIES/TopStories'
 
 
 
@@ -42,6 +42,7 @@ function App() {
           <Route path="/mobilesDetails" element={<MobilePage />} />
           <Route path="/groceryDetails" element={<GroceryPage />} />
           <Route path="/bestMobilesDetails" element={<BestGoodsPage />} />
+          <Route path="/companyDetails" element={<CompanyDetails />} />
           <Route
             path="/home"
             element={

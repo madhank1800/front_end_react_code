@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import SLIDESHOW from "../SLIDESHOW/SlideShow";
 import BestGoodsPage from "../BestOfGoods/BestGoodsPage";
+import TopStories from "../TOP_STORIES/TopStories";
 const Home = () => {
     
   const [AccountToggleSucess, setAccountToggleSuccess] = useState(false);
@@ -1568,8 +1569,9 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <SLIDESHOW  />
+            <SLIDESHOW />
             <BestGoodsPage />
+            <TopStories/>
           </div>
         </div>
       </>

@@ -1,0 +1,210 @@
+.headingPart{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    margin:20px 0 0 20px;
+}
+.wholeDirectory{
+    margin-top: 100px;
+}
+.AnchorTagOfDirectory{
+    color:black;
+    cursor: pointer;
+    text-decoration: none;
+    /* display: inline-block;
+    justify-content: flex-start; */
+}
+
+#titleId{
+    font-weight: 500;
+}
+
+
+.titleName{
+    background-color: transparent;
+     display: inline-block;
+     justify-content: flex-start;
+  
+}
+
+.descriptionBox{
+    margin:20px;
+    cursor: default;
+}
+
+.paraDescription{
+    color:black;
+    font-family: inter_regular,
+        fallback-inter_regular,
+        Arial,
+        sans-serif;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: normal;
+        color:rgb(135,135,135);
+        font-weight: 400;
+    
+}
+
+
+.EndOfPageColor{
+ 
+    height:320px;
+    background-color: black;
+    width:100%;
+      
+}
+.insideEndOfPage{
+ 
+height: 320px;
+    background-color: black;
+    width: 100%;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.rowInsideClass{
+   
+        display: flex;
+        flex-direction: row;
+
+        padding:30px;
+     height: 264px;
+        background-color: black;
+        width: 100%;
+        border-bottom: 1px solid white;
+      
+}
+
+.rotatingClass{
+    background-color: black;
+}
+
+
+.rowClass{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+.FirstPart{
+    display: flex;
+        flex-direction: row;
+      background-color: black !important;
+      
+border-right: 1px solid white;
+}
+
+.FirstPartRowClass{
+    display: flex;
+    flex-direction: column;
+background-color: black !important;
+    width:180px;
+    text-decoration: none;
+    color:white;
+    letter-spacing: normal;
+        color: rgb(135, 135, 135);
+        font-family: inter_regular,
+                fallback-inter_regular,
+                Arial,
+                sans-serif;
+            font-size: 14px;
+            line-height: 16px;
+           
+}
+
+.titleNameEnd{
+    background-color: black;
+  
+    
+}
+
+.titleCLassPa{
+    background-color: black;
+    color:white;
+
+
+}
+
+.matterBAckClass{
+    background-color: black !important;
+    margin-top:20px;
+}
+
+/* .secondPart{
+    background-color: black;
+} */
+
+
+
+
+.SecondPartRowClass{
+    display: flex;
+        flex-direction: column;
+        background-color: black !important;
+        width: 200px;
+        text-decoration: none;
+        color: white;
+        letter-spacing: normal;
+        color: rgb(135, 135, 135);
+        font-family: inter_regular,
+            fallback-inter_regular,
+            Arial,
+            sans-serif;
+        font-size: 14px;
+        line-height: 16px;
+        padding-right: 20px;
+}
+
+
+.SecondPart{
+display: flex;
+    flex-direction: row;
+    background-color: black !important;
+}
+
+
+.rowClassTwo{
+    display: flex;
+        flex-direction: row;
+        background-color: black;
+        margin-left:30px;
+}
+
+
+.secondPartInside{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.secondPart{
+        display: flex;
+            flex-direction: row;
+            background-color: black;
+}
+
+.secondPartInsideClass{
+    display: flex;
+        flex-direction: row;
+        background-color: black;
+}
+
+.shopIconInLast{
+    background-color: black !important;
+
+}
+
+.sellerClassLast{
+    background-color: black;
+    color: white;
+    margin-left:10px;
+}
+
+.IconClass{
+    background-color: black;
+    background: transparent;
+    color:yellow;
+    margin-left: 50px;
+}

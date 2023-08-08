@@ -154,7 +154,7 @@ background-color: transparent;
 .shopIcon{
        
         background: transparent;
-            background-color: transparent;
+            background-color: white !important;
                 font-weight:bolder;
 }
 .shopContent{
