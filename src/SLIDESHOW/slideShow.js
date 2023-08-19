@@ -90,16 +90,16 @@ const SlideShow = () => {
         <div id="slideShowClass">
           <div
             id="carouselExampleDark"
-            class="carousel carousel-dark slide shadow-lg   carouselSlideClassMain"
+            className="carousel carousel-dark slide shadow-lg   carouselSlideClassMain"
             data-bs-ride="carousel"
             data-bs-interval="1000"
           >
-            <div class="carousel-indicators">
+            <div className="carousel-indicators">
               <button
                 type="button"
                 data-bs-target="#carouselExampleDark"
                 data-bs-slide-to="0"
-                class="active"
+                className="active"
                 aria-current="true"
                 aria-label="Slide 1"
               ></button>
@@ -117,55 +117,55 @@ const SlideShow = () => {
               ></button>
             </div>
             <div
-              class="carousel-inner"
+              className="carousel-inner"
               data-bs-interval="1000"
              
             >
-              <div class="carousel-item active" data-bs-interval="1000">
+              <div className="carousel-item active" data-bs-interval="1000">
                 <img
                   src="/images/slideShowImage3.jpg"
-                  class="d-block w-100"
+                  className="d-block w-100"
                   alt="slide"
                 />
               </div>
-              <div class="carousel-item" data-bs-interval="1000">
+              <div className="carousel-item" data-bs-interval="1000">
                 <img
                   src="/images/slideShowImage2.jpg"
-                  class="d-block w-100"
+                  className="d-block w-100"
                   alt="slide"
                 />
               </div>
-              <div class="carousel-item" data-bs-interval="1000">
+              <div className="carousel-item" data-bs-interval="1000">
                 <img
                   src="/images/slideShowImage.jpg"
-                  class="d-block w-100"
+                  className="d-block w-100"
                   alt="slide"
                 />
               </div>
             </div>
             <button
-              class="carousel-control-prev carouselButtonClass"
+              className="carousel-control-prev carouselButtonClass"
               type="button"
               data-bs-target="#carouselExampleDark"
               data-bs-slide="prev"
             >
               <span
-                class="carousel-control-prev-icon iconColor"
+                className="carousel-control-prev-icon iconColor"
                 aria-hidden="true"
               ></span>
-              <span class="visually-hidden">Previous</span>
+              <span className="visually-hidden">Previous</span>
             </button>
             <button
-              class="carousel-control-next carouselButtonClass1"
+              className="carousel-control-next carouselButtonClass1"
               type="button"
               data-bs-target="#carouselExampleDark"
               data-bs-slide="next"
             >
               <span
-                class="carousel-control-next-icon iconColor"
+                className="carousel-control-next-icon iconColor"
                 aria-hidden="true"
               ></span>
-              <span class="visually-hidden">Next</span>
+              <span className="visually-hidden">Next</span>
             </button>
           </div>
         </div>

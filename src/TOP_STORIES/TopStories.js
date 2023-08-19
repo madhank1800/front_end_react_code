@@ -227,7 +227,7 @@ const TopStories = () => {
                   console.log("topstories", detail);
 
                   return (
-                    <>
+                  
                       <span key={index}>
                         <span className="titleName">
                           <span id="titleId">{Object.keys(detail)}:</span>
@@ -253,7 +253,7 @@ const TopStories = () => {
                           ))}
                         </span>
                       </span>
-                    </>
+                    
                   );
                 })}{" "}
               </span>
@@ -261,19 +261,22 @@ const TopStories = () => {
             <div>
               <div>
                 <div className="descriptionBox">
-                  <div clasName="InsideDescriptionBox">
+                  <div className="InsideDescriptionBox">
                     {description.map((desc, index) => {
                       console.log("desc", desc);
                       return (
-                        <>
+                        
                           <div key={index}>
                             <h5 className="headerr">{desc.header}</h5>
 
-                            {desc.description.map((name) => {
+                            {desc.description.map((name,id) => {
                               console.log("name1", name);
                               return (
-                                <>
-                                  <div
+                                
+                                  
+
+
+                                  <div key={id}
                                     onPaste={(e) => {
                                       e.preventDefault();
                                       return false;
@@ -284,12 +287,14 @@ const TopStories = () => {
                                     }}
                                   >
                                     <p className="paraDescription">{name}</p>
-                                  </div>
-                                </>
+                                </div>
+                                
+
+                                
                               );
                             })}
                           </div>
-                        </>
+                        
                       );
                     })}
                   </div>
@@ -303,7 +308,7 @@ const TopStories = () => {
                     <div className="FirstPart">
                       {companyDetails.map((detail, index) => {
                         return (
-                          <>
+                          
                             <div key={index} className="rotatingClass">
                               <div className="titleNameEnd">
                                 <span className="titleCLassPa">
@@ -331,7 +336,7 @@ const TopStories = () => {
                                 ))}
                               </div>
                             </div>
-                          </>
+                          
                         );
                       })}
                     </div>
@@ -340,7 +345,7 @@ const TopStories = () => {
                     <div className="SecondPart">
                       {CompanyDetailsList.map((detail, index) => {
                         return (
-                          <>
+                          
                             <div key={index} className="rotatingClass">
                               <div className="titleNameEnd">
                                 <span className="titleCLassPa">
@@ -368,7 +373,7 @@ const TopStories = () => {
                                 ))}
                               </div>
                             </div>
-                          </>
+                          
                         );
                       })}
                     </div>
@@ -379,35 +384,35 @@ const TopStories = () => {
                   <div className="secondPartInside">
                     <div className="secondPartInsideClass">
                       <span className="shopIconInLast">
-                        <i class="bi bi-shop IconClass"></i>
+                        <i className="bi bi-shop IconClass"></i>
                       </span>
                       <span className="sellerClassLast">Become seller</span>
                     </div>
 
                     <div className="secondPartInsideClass">
                       <span className="shopIconInLast">
-                        <i class="bi bi-badge-ad IconClass"></i>
+                        <i className="bi bi-badge-ad IconClass"></i>
                       </span>
                       <span className="sellerClassLast">Advertise</span>
                     </div>
 
                     <div className="secondPartInsideClass">
                       <span className="shopIconInLast">
-                        <i class="bi bi-gift IconClass"></i>
+                        <i className="bi bi-gift IconClass"></i>
                       </span>
                       <span className="sellerClassLast">Gift Cards</span>
                     </div>
 
                     <div className="secondPartInsideClass">
                       <span className="shopIconInLast">
-                        <i class="bi bi-question-circle IconClass"></i>
+                        <i className="bi bi-question-circle IconClass"></i>
                       </span>
                       <span className="sellerClassLast">Help Center</span>
                     </div>
 
                     <div className="secondPartInsideClass">
                       <span className="shopIconInLast">
-                        <i class="bi bi-c-circle IconClass"></i>
+                        <i className="bi bi-c-circle IconClass"></i>
                       </span>
                       <span className="sellerClassLast">
                         2007-2023 Flipkart.com

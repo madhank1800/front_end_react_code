@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Login from "./LoginPage/Login";
 import Signup from "./SignupPage/Signup";
 import Signin from "./SigninPage/SigninPage";
@@ -14,7 +14,7 @@ import MobilePage from "./MobilesPage/MobilePage";
 import GroceryPage from "./Grocery/groceryPage";
 import BestGoodsPage from "./BestOfGoods/BestGoodsPage";
 import CompanyDetails from './TOP_STORIES/TopStories'
-
+import SingleMobile from "./SINGLEMOBILE/SingleMobile";
 
 
 //import Protected from "./Protected/Protected";
@@ -28,6 +28,9 @@ function App() {
   //console.log("local data", localStorage.getItem("authenticated"));
   //console.log("tutuut");
   //isauth={localStorage.getItem("authenticated")}
+
+
+  // let { mobileId } = useParams();
   return (
     <div className="App">
       <BrowserRouter>
@@ -43,6 +46,7 @@ function App() {
           <Route path="/groceryDetails" element={<GroceryPage />} />
           <Route path="/bestMobilesDetails" element={<BestGoodsPage />} />
           <Route path="/companyDetails" element={<CompanyDetails />} />
+          <Route path="mobilesDetails/:mobileId" element={<SingleMobile />} />
           <Route
             path="/home"
             element={

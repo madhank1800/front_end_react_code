@@ -1,0 +1,310 @@
+#oppoButton{
+    /* margin-top: 150px; */
+
+    outline: none;
+    background:transparent;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    padding: 0 3rem;
+    font-family: inherit;
+    font-size: 1.25rem;
+    border:0;
+    border-radius: 0.5rem;
+    color:black;
+    cursor: pointer;
+    
+
+
+ 
+        background-color: #748ad3;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 3px #999;
+        margin:10px 20px 10px 40px;
+
+}
+
+#oppoButton:hover
+    {
+            background-color: #3d3fcc;
+            /* transform: scale(1.01); */
+}
+
+.WholeMobilePage{
+  display: flex;
+  flex-direction: row;
+
+
+
+
+}
+
+
+
+.TotalPageWhole{
+display: flex;
+    flex-direction: row;
+
+ 
+}
+
+.totalPageInside{
+    /* box-sizing: border-box; */
+        display: flex;
+            flex-direction: row;
+        margin-top: 100px;
+    /* display: flex;
+    flex-direction: row; */
+    background-color: white;
+    width:100%;
+
+
+/* position: sticky; */
+    /* top:100px; */
+  
+}
+
+.FilterInsideWhole{
+    display: flex;
+    flex-direction: column;
+
+
+  /* position: sticky; */
+  /* top:0px; */
+
+}
+
+.FilterInsideWholeCol{
+    display: flex;
+        flex-direction: column;
+        height:700px;
+        width:300px;
+        background-color: white;
+    
+
+
+    position: sticky;
+        top: 100px;
+    
+}
+
+
+.MobileListWholePart{
+    display: flex;
+    flex-direction: column;
+    /* min-height: 1500px; */
+        width: 100%;
+    /* height: fit-content; */
+ 
+}
+
+.MobileListWhole{
+    display: flex;
+        flex-direction: column;
+         margin-left: 20px;
+   
+        background-color: white;
+        
+        min-height: 1000px;
+        /* width: 100%; */
+        height: fit-content;
+ 
+        
+
+}
+
+
+.upperPartButtons{
+    display: flex;
+    flex-direction: row;
+    height:230px;
+    width:100%;
+ 
+    
+  
+}
+
+.secondPartMobileList{
+    /* display: flex; */
+    /* flex-direction: row; */
+    height:100%;
+    width:100%;
+
+}
+
+.buttonStyles{
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   margin-left: 40px;
+
+}
+
+.buttonStyles:hover{
+    /* transform: scale(1.01); */
+}
+.buttonStyles span:hover{
+ color:greenyellow;
+}
+
+.productDetailsStylesButtons{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width:204px;
+}
+
+.productDetailsStylesButtons:hover{
+    transform: scale(1.02);
+
+}
+
+.MobileStylecss{
+font-family: inherit;
+
+    padding: 3px;
+    margin:5px !important;
+    font-weight: 500;
+}
+
+
+#MobileListRowDisplay{
+    display:flex;
+    flex-direction: column;
+    height:300px;
+     width: 100%;
+  /* border:2px solid black;   */
+    background-color: white;
+    flex-flow: nowrap;
+cursor: pointer;
+    /* height: fit-content; */
+text-decoration: none !important;
+}
+
+
+.MobileImageColumnDisplay1{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+   
+
+
+    flex-basis: 25%;
+        flex-grow: 1;
+}
+
+.MobileImageColumnDisplay1Row{
+   
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+.MobileImageColumnDisplay1Image{
+    background-color: white;
+  
+    background-size:cover;
+    background-position: center;
+}
+
+.MobileImageColumnDisplay1Row>input{
+    background-color: white;
+    margin-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+
+.MobileImageColumnDisplay1Row>span{
+ background-color: white;
+ margin:10px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-weight: 400;
+}
+
+.MobileImageColumnDisplay2 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+
+flex-basis: 50%;
+    flex-grow: 2;
+
+}
+
+.MobileImageColumnDisplay2Row{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height:30%;
+    background-color: white !important;
+    
+}
+.MobileImageColumnDisplay2Row2{
+    background-color: white;
+    height:fit-content;
+    overflow: hidden;
+}
+.MobileImageColumnDisplay2Row>h3{
+    background-color: white;
+}
+
+.MobileImageColumnDisplay2Row2>ul{
+    background-color: white;
+}
+
+ul>li{
+    background-color: white;
+}
+
+
+
+
+
+.MobileImageColumnDisplay3 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+
+flex-basis: 25%;
+    flex-grow: 1;
+
+}
+
+
+.MobileImageColumnDisplay3>p{
+    background-color: white;
+    color:black
+}
+
+.MobileImageColumnDisplay3>h3 {
+    background-color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* #MobileListRowDisplay > .MobileImageColumnDisplay:nth-of-type(2){
+    flex-basis: 50%;
+    flex-grow: 2;
+}
+
+#MobileListRowDisplay > .MobileImageColumnDisplay:nth-of-type(1) ,:nth-of-type(3){
+    flex-basis: 25%;
+    flex-grow: 1;
+} */

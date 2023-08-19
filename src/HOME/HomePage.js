@@ -407,7 +407,7 @@ const Home = () => {
                   </div>
                   <div className="searchPart">
                     <button className="searchIconTag">
-                      <i class="bi bi-search iconTag"></i>
+                      <i className="bi bi-search iconTag"></i>
                     </button>
                     <form className="formTag">
                       <input
@@ -660,7 +660,9 @@ const Home = () => {
                               console.log("key", key);
                               //  const { iconLink, icon, iconName } = detail;
                               return (
-                                <>
+                              
+                                  
+
                                   <div
                                     key={detail.id}
                                     // href={detail.iconLink}
@@ -705,7 +707,11 @@ const Home = () => {
                                       </div>
                                     </li>
                                   </div>
-                                </>
+
+
+
+
+                                
                               );
                             })}
 
@@ -1554,10 +1560,10 @@ const Home = () => {
                       {BikeToggleSuccess && (
                         <>
                           <ul className="list-group ulClassNameFashion">
-                            <li class="list-group-item liClassName">
+                            <li className="list-group-item liClassName">
                               petrol motor vehicles
                             </li>
-                            <li class="list-group-item liClassName">
+                            <li className="list-group-item liClassName">
                               electronic vehicles
                             </li>
                           </ul>

@@ -11,6 +11,6 @@ export const mobileDetailsReducer = (state = initialState, { type, payload }) =>
         products: payload,
       };
     default:
-      return state;
+      return state ;
   }
 };
